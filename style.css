@@ -1,0 +1,132 @@
+.body {
+  font-family: 'Open Sans','Josefin Sans', sans-serif;
+}
+
+.product__column {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.product__column:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+.featured__product {
+  position: relative;
+}
+
+.featured__product__bg {
+  position: absolute;
+  width: 70%;
+  background-color: #ffbd4a;
+  z-index: 10;
+  height: 100%;
+}
+.featured__product__img {
+  text-align: left;
+  z-index: 20;
+}
+.featured__product__img img {
+  padding: 2rem 0;
+}
+.featured__product__text {
+  text-align: left;
+  z-index: 21;
+  font-family: 'Open Sans','Josefin Sans', sans-serif;
+  
+}
+.featured__product__text p {
+  line-height: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #444;
+  padding-bottom: 1.8rem;
+}
+.featured__product__text h1 {
+  font-family: 'Cormorant Garamond','Open Sans','Josefin Sans', sans-serif;
+  padding-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #a8a8a8;
+}
+.featured__product__btn {
+  color: rgba(0,0,0,1);
+    border-width: 01px;
+    border-color: rgba(0,0,0,1);
+    border-radius: 0;
+    padding: 1rem 3rem;
+    height: 3rem;
+    transition: all .3s linear;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.featured__product__btn:hover {
+  background-color: rgba(7,7,7,1);
+    color: rgba(252,252,252,1);
+    border-width: 01px;
+    border-color: rgba(0,0,0,1);
+}
+.test {
+  background-image: url(./img/Paloma.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#goop {
+  fill: #fff;
+}
+.navbar.is-gray {
+  background-color: #e5ece9;
+  color: #333;
+}
+.product__column {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  padding: 0;
+  margin: 0.2rem;
+}
+
+.product__column > img {
+  vertical-align: bottom;
+}
+
+.product__info {
+  padding: 0.2rem 0 0.2rem 2rem;
+  background: rgba(255, 189, 74, 0.9);
+  /* background: rgba(168, 168, 168, 0.8); */
+  /* background: rgba(255, 92, 92, 0.9); */
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+
+.product__info::before {
+  content: "";
+  /* background-color: #ff5c5c; */
+  /* background-color: #ffbd4a; */
+  background-color: #a8a8a8;
+  height: calc(100% - 20px);
+  position: absolute;
+  margin: 10px 0;
+  left: 15px;
+  top: 0;
+  width: 2px;
+}
+
+.product__name {
+  color: 333;
+  font-size: 1.1rem;
+  line-height: 2.6rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  /* text-transform: lowercase; */
+}
+
+.product__meta {
+  font-size: 0.9rem;
+  font-weight: 300;
+  font-weight: bold;
+}
